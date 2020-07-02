@@ -9,6 +9,9 @@ CHANGELOG
 - Go SDK: Input type interfaces should declare pointer type impls where appropriate
   [#4911](https://github.com/pulumi/pulumi/pull/4911)
 
+- Add the ability to copy configuration between stacks
+  [#4971](https://github.com/pulumi/pulumi/pull/4971)
+
 ## 2.5.0 (2020-06-25)
 
 - Go program gen: prompt array conversion, unused range vars, id handling
