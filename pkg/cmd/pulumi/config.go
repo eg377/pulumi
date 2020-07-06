@@ -113,7 +113,7 @@ func newConfigCopyCmd(stack *string) *cobra.Command {
 			}
 
 			if s.Ref().Name().String() == newStackName {
-				return errors.New("config must be copied to a different stack than currently using")
+				return errors.New("source and destination stacks must be different when copying config")
 			}
 
 			currentStack, err := loadProjectStack(s)
