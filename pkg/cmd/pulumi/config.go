@@ -100,7 +100,7 @@ func newConfigCopyCmd(stack *string) *cobra.Command {
 		Use:   "cp <key>",
 		Short: "Copy config to another stack",
 		Long: "Copies the config from the current stack to the newly specified stack. If a key is omitted,\n" +
-			"then all of the config, of the current stack, will copied to the new stack.",
+			"then all of the config of the current stack will be copied to the new stack.",
 		Args: cmdutil.MaximumNArgs(1),
 		Run: cmdutil.RunFunc(func(cmd *cobra.Command, args []string) error {
 			opts := display.Options{
